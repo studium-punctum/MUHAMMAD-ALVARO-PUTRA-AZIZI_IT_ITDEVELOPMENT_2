@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter – FontDale</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FONTDALE</h1>
+        <p>PREMIUM LIFESTYLE MALL</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About Us</a>
+        <a href="newsletter.html" class="active">Newsletter</a>
+    </nav>
+
+    <main>
+
+        <h2>Newsletter</h2>
+        <p class="page-intro">Subscribe to the FontDale newsletter to receive exclusive event invitations, store announcements, and curated lifestyle content delivered directly to you.</p>
+
+        <form id="newsletter-form" class="newsletter-form" novalidate>
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name">
+                <p class="error-msg" id="name-error"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email address">
+                <p class="error-msg" id="email-error"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number (digits only)">
+                <p class="error-msg" id="phone-error"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="topic">Topic of Interest</label>
+                <select id="topic" name="topic">
+                    <option value="">— Select a topic —</option>
+                    <option value="fashion">Fashion &amp; Apparel</option>
+                    <option value="beauty">Beauty &amp; Cosmetics</option>
+                    <option value="technology">Technology</option>
+                    <option value="dining">Dining &amp; Food</option>
+                    <option value="events">Events &amp; Promotions</option>
+                    <option value="luxury">Luxury &amp; Lifestyle</option>
+                </select>
+                <p class="error-msg" id="topic-error"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="updates">Update Preference</label>
+                <select id="updates" name="updates">
+                    <option value="">— How often would you like updates? —</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="special">Special Occasions Only</option>
+                </select>
+                <p class="error-msg" id="updates-error"></p>
+            </div>
+
+            <button type="submit" class="btn">Subscribe</button>
+
+        </form>
+
+        <div class="success-msg" id="success-msg">
+            <p>Thank you for subscribing to the FontDale newsletter. We look forward to keeping you informed on the very best of what FontDale has to offer.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FontDale. All rights reserved. | Arcadia Circle, FontDale Premium District | https://github.com/studium-punctum</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/newsletter.js"></script>
+
+</body>
+</html>
